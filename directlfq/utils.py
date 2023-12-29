@@ -798,7 +798,6 @@ def import_data(input_file, input_type_to_use = None, samples_subset = None, fil
     
     input_reshaped = pd.read_csv(file_to_read, sep = "\t", encoding = 'latin1', usecols=samples_subset)
     input_reshaped = adapt_table_for_alphabaseformat_backward_compatibility(file_is_already_formatted, input_reshaped)
-    input_reshaped = input_reshaped.drop_duplicates(subset=config.QUANT_ID)
 
     return input_reshaped
 
