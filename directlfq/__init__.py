@@ -2,7 +2,7 @@
 
 
 __project__ = "directlfq"
-__version__ = "0.2.15"
+__version__ = "0.2.19"
 __license__ = "Apache"
 __description__ = "An open-source Python package of the AlphaPept ecosystem"
 __author__ = "Mann Labs"
@@ -13,13 +13,13 @@ __keywords__ = [
     "software",
     "AlphaPept ecosystem",
 ]
-__python_version__ = ">=3.8,<3.11"
+__python_version__ = ">=3.8"
 __classifiers__ = [
-    "Development Status :: 1 - Planning",
+    # "Development Status :: 1 - Planning",
     # "Development Status :: 2 - Pre-Alpha",
     # "Development Status :: 3 - Alpha",
     # "Development Status :: 4 - Beta",
-    # "Development Status :: 5 - Production/Stable",
+     "Development Status :: 5 - Production/Stable",
     # "Development Status :: 6 - Mature",
     # "Development Status :: 7 - Inactive"
     "Intended Audience :: Science/Research",
