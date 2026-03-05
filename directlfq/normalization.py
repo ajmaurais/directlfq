@@ -351,7 +351,7 @@ class NormalizationManagerSamplesOnSelectedProteins(NormalizationManager):
             ion_dataframe_selected = ion_dataframe
             sample2shift = get_normfacts(drop_nas_if_possible(ion_dataframe_selected).to_numpy())
 
-        df_c_normed = pd.DataFrame(apply_sampleshifts(ion_dataframe.to_numpy(copy = config.COPY_NUMPY_ARRAYS_DERIVED_FROM_PANDAS), sample2shift), index = ion_dataframe.index, columns = ion_dataframe.columns)
+        df_c_normed = pd.DataFrame(apply_sampleshifts(ion_dataframe.to_numpy(copy = True), sample2shift), index = ion_dataframe.index, columns = ion_dataframe.columns)
         return df_c_normed
     
     def _create_reference_sample(self):
