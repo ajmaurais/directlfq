@@ -54,6 +54,6 @@ def _manipulate_numpy_array_without_copy():
     }, index=['Sample1', 'Sample2', 'Sample3', 'Sample4'])
     
     protein_profile_df = protein_profile_df.iloc[1:3]
-    protein_profile_numpy = protein_profile_df.to_numpy(copy=False)
+    protein_profile_numpy = protein_profile_df.to_numpy(copy=True)
 
     protein_profile_numpy[0] = protein_profile_numpy[0] +2
